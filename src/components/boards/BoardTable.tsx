@@ -17,13 +17,13 @@ export default function BoardTable() {
             <a href="#">
               <dl className="flex relative flex-wrap">
                 <dd className="w-[10%] hidden md:block">134</dd>
-                <dd className="w-full md:w-full md:w-[45%] block">게시물 제목입니다.</dd>
-                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[474D66]">박동욱</dd>
-                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[474D66]">
+                <dd className="w-full md:w-[45%] block">게시물 제목입니다.</dd>
+                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[#474D66]">박동욱</dd>
+                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[#474D66]">
                   <Image src="/assets/icons/ic_heart.svg" alt="좋아요" width={16} height={16} className="inline-block md:hidden" />
                   <span>64</span>
                 </dd>
-                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[474D66]">2024.02.24</dd>
+                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[#474D66]">2024.02.24</dd>
               </dl>
             </a>
           </li>
@@ -32,12 +32,12 @@ export default function BoardTable() {
               <dl className="flex relative flex-wrap">
                 <dd className="w-[10%] hidden md:block">134</dd>
                 <dd className="w-full md:w-[45%] block">게시물 제목입니다.</dd>
-                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[474D66]">박동욱</dd>
-                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[474D66]">
+                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[#474D66]">박동욱</dd>
+                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[#474D66]">
                   <Image src="/assets/icons/ic_heart.svg" alt="좋아요" width={16} height={16} className="inline-block md:hidden" />
                   <span>64</span>
                 </dd>
-                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[474D66]">2024.02.24</dd>
+                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[#474D66]">2024.02.24</dd>
               </dl>
             </a>
           </li>
@@ -46,12 +46,12 @@ export default function BoardTable() {
               <dl className="flex relative flex-wrap">
                 <dd className="w-[10%] hidden md:block">134</dd>
                 <dd className="w-full md:w-[45%] block">게시물 제목입니다.</dd>
-                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[474D66]">박동욱</dd>
-                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[474D66]">
+                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[#474D66]">박동욱</dd>
+                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[#474D66]">
                   <Image src="/assets/icons/ic_heart.svg" alt="좋아요" width={16} height={16} className="inline-block md:hidden" />
                   <span>64</span>
                 </dd>
-                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[474D66]">2024.02.24</dd>
+                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[#474D66]">2024.02.24</dd>
               </dl>
             </a>
           </li>
@@ -60,12 +60,12 @@ export default function BoardTable() {
               <dl className="flex relative flex-wrap">
                 <dd className="w-[10%] hidden md:block">134</dd>
                 <dd className="w-full md:w-[45%] block">게시물 제목입니다.</dd>
-                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[474D66]">박동욱</dd>
-                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[474D66]">
+                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[#474D66]">박동욱</dd>
+                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[#474D66]">
                   <Image src="/assets/icons/ic_heart.svg" alt="좋아요" width={16} height={16} className="inline-block md:hidden" />
                   <span>64</span>
                 </dd>
-                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[474D66]">2024.02.24</dd>
+                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[#474D66]">2024.02.24</dd>
               </dl>
             </a>
           </li>
@@ -74,12 +74,12 @@ export default function BoardTable() {
               <dl className="flex relative flex-wrap">
                 <dd className="w-[10%] hidden md:block">134</dd>
                 <dd className="w-full md:w-[45%] block">게시물 제목입니다.</dd>
-                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[474D66]">박동욱</dd>
-                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[474D66]">
+                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[#474D66]">박동욱</dd>
+                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[#474D66]">
                   <Image src="/assets/icons/ic_heart.svg" alt="좋아요" width={16} height={16} className="inline-block md:hidden" />
                   <span>64</span>
                 </dd>
-                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[474D66]">2024.02.24</dd>
+                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[#474D66]">2024.02.24</dd>
               </dl>
             </a>
           </li>
@@ -88,12 +88,12 @@ export default function BoardTable() {
               <dl className="flex relative flex-wrap">
                 <dd className="w-[10%] hidden md:block">134</dd>
                 <dd className="w-full md:w-[45%] block">게시물 제목입니다.</dd>
-                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[474D66]">박동욱</dd>
-                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[474D66]">
+                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[#474D66]">박동욱</dd>
+                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[#474D66]">
                   <Image src="/assets/icons/ic_heart.svg" alt="좋아요" width={16} height={16} className="inline-block md:hidden" />
                   <span>64</span>
                 </dd>
-                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[474D66]">2024.02.24</dd>
+                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[#474D66]">2024.02.24</dd>
               </dl>
             </a>
           </li>
@@ -102,12 +102,12 @@ export default function BoardTable() {
               <dl className="flex relative flex-wrap">
                 <dd className="w-[10%] hidden md:block">134</dd>
                 <dd className="w-full md:w-[45%] block">게시물 제목입니다.</dd>
-                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[474D66]">박동욱</dd>
-                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[474D66]">
+                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[#474D66]">박동욱</dd>
+                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[#474D66]">
                   <Image src="/assets/icons/ic_heart.svg" alt="좋아요" width={16} height={16} className="inline-block md:hidden" />
                   <span>64</span>
                 </dd>
-                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[474D66]">2024.02.24</dd>
+                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[#474D66]">2024.02.24</dd>
               </dl>
             </a>
           </li>
@@ -116,12 +116,12 @@ export default function BoardTable() {
               <dl className="flex relative flex-wrap">
                 <dd className="w-[10%] hidden md:block">134</dd>
                 <dd className="w-full md:w-[45%] block">게시물 제목입니다.</dd>
-                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[474D66]">박동욱</dd>
-                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[474D66]">
+                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[#474D66]">박동욱</dd>
+                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[#474D66]">
                   <Image src="/assets/icons/ic_heart.svg" alt="좋아요" width={16} height={16} className="inline-block md:hidden" />
                   <span>64</span>
                 </dd>
-                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[474D66]">2024.02.24</dd>
+                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[#474D66]">2024.02.24</dd>
               </dl>
             </a>
           </li>
@@ -130,12 +130,12 @@ export default function BoardTable() {
               <dl className="flex relative flex-wrap">
                 <dd className="w-[10%] hidden md:block">134</dd>
                 <dd className="w-full md:w-[45%] block">게시물 제목입니다.</dd>
-                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[474D66]">박동욱</dd>
-                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[474D66]">
+                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[#474D66]">박동욱</dd>
+                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[#474D66]">
                   <Image src="/assets/icons/ic_heart.svg" alt="좋아요" width={16} height={16} className="inline-block md:hidden" />
                   <span>64</span>
                 </dd>
-                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[474D66]">2024.02.24</dd>
+                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[#474D66]">2024.02.24</dd>
               </dl>
             </a>
           </li>
@@ -144,12 +144,12 @@ export default function BoardTable() {
               <dl className="flex relative flex-wrap">
                 <dd className="w-[10%] hidden md:block">134</dd>
                 <dd className="w-full md:w-[45%] block">게시물 제목입니다.</dd>
-                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[474D66]">박동욱</dd>
-                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[474D66]">
+                <dd className="w-inline md:w-[15%] text-[#8F95B2] md:text-[#474D66]">박동욱</dd>
+                <dd className="w-[15%] absolute right-0 bottom-0 text-[#8F95B2] md:text-[#474D66]">
                   <Image src="/assets/icons/ic_heart.svg" alt="좋아요" width={16} height={16} className="inline-block md:hidden" />
                   <span>64</span>
                 </dd>
-                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[474D66]">2024.02.24</dd>
+                <dd className="w-[15%] ml-[16px] text-[#8F95B2] md:text-[#474D66]">2024.02.24</dd>
               </dl>
             </a>
           </li>
@@ -188,7 +188,7 @@ export default function BoardTable() {
 
               <span className="sr-only">Next</span>
             </a>
-          </nav>
+        </nav>
       </div>
     </>
   )

@@ -2,44 +2,51 @@ import Image from 'next/image';
 import styles from '@/styles/boards/bestposts.module.css';
 const posts = [
   {
-    id: 1,
-    title: '게시물 제목입니다1',
-    writer:'박동욱',
-    date:'2024.02.24',
-    href: '#',
-    like: '135',
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-04-image-card-01.jpg',
-    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    "updatedAt": "2025-05-01T02:39:33.254Z",
+    "createdAt": "2025-05-01T02:39:33.254Z",
+    "likeCount": 135,
+    "writer": {
+      "name": "박동욱",
+      "id": 1
+    },
+    "image": "https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-04-image-card-01.jpg",
+    "title": "게시글 제목입니다1",
+    "id": 1
   },
   {
-    id: 2,
-    title: '게시물 제목입니다2',
-    writer:'박동욱',
-    date:'2024.02.24',
-    href: '#',
-    like: '135',
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-04-image-card-02.jpg',
-    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+    "updatedAt": "2025-05-01T02:39:33.254Z",
+    "createdAt": "2025-05-01T02:39:33.254Z",
+    "likeCount": 150,
+    "writer": {
+      "name": "박욱",
+      "id": 2
+    },
+    "image": "https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-04-image-card-01.jpg",
+    "title": "게시글 제목입니다2",
+    "id": 2
   },
   {
-    id: 3,
-    title: '게시물 제목입니다3',
-    writer:'박동욱',
-    date:'2024.02.24',
-    href: '#',
-    like: '135',
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-04-image-card-03.jpg',
-    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
-  },
-  {
-    id: 4,
-    title: '게시물 제목입니다4',
-    writer:'박동욱',
-    date:'2024.02.24',
-    href: '#',
-    like: '135',
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-04-image-card-04.jpg',
-    imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+    "updatedAt": "2025-05-01T02:39:33.254Z",
+    "createdAt": "2025-05-01T02:39:33.254Z",
+    "likeCount": 120,
+    "writer": {
+      "name": "박정욱",
+      "id": 3
+    },
+    "image": "https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-04-image-card-01.jpg",
+    "title": "게시글 제목입니다3",
+    "id": 3
+  },{
+    "updatedAt": "2025-05-01T02:39:33.254Z",
+    "createdAt": "2025-05-01T02:39:33.254Z",
+    "likeCount": 200,
+    "writer": {
+      "name": "박싱욱",
+      "id": 4
+    },
+    "image": "https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-04-image-card-01.jpg",
+    "title": "게시글 제목입니다4",
+    "id": 4
   }
 ]
 
@@ -56,21 +63,21 @@ export default function BestPosts() {
       <div className='relative px-[20px] pb-[20px] mb-[40px] overflow-x-auto overflow-y-hidden'>
         <div className="flex gap-4 w-[1048px] md:w-full md:gap-5 md:flex-wrap lg:gap-4 lg:w-full lg:flex-nowrap ">
             {posts.map((product) => (
-              <a key={product.id} href={product.href} className="flex-shrink-0 w-[250px] h-[200px] md:w-[calc(50%-10px)] md:h-[220px] lg:w-[calc(25%-12px)] rounded-lg card-shadow">
+              <a key={product.id} href="#" className="flex-shrink-0 w-[250px] h-[200px] md:w-[calc(50%-10px)] md:h-[220px] lg:w-[calc(25%-12px)] rounded-lg card-shadow">
                 <img
-                  alt={product.imageAlt}
-                  src={product.imageSrc}
+                  alt="작성 이미지"
+                  src={product.image}
                   className="rounded-lg w-full h-[131px] object-cover object-top" />
                 <div className="p-[20px] pt-[11px] pb-[14px] md:p-[20px] md:pb-[13px] lg:p-[19px] lg:pb-[14px] text-lg">
                   <h3 className=" md:mb-[6px] md:text-[18px] font-semibold text-[#474D66]">{product.title}</h3>
                   <div className="flex justify-between leading-[18px] text-[12px] md:leading-[24px] md:text-[14px]">
                     <div className="text-[#8F95B2]">
-                      <span>{product.writer}</span>
-                      <span className='ml-[8px]'>{product.date}</span>
+                      <span>{product.writer.name}</span>
+                      <span className='ml-[8px]'>{product.createdAt.split('T')[0]}</span>
                     </div>
                     <div className="text-[#8F95B2]">
                     <Image src="/assets/icons/ic_heart.svg" alt="좋아요" width={16} height={16} className="inline-block" />
-                    {product.like}
+                    {product.likeCount}
                     </div>
                   </div>
 
@@ -78,7 +85,7 @@ export default function BestPosts() {
               </a>
             ))}
           </div>
-        </div>
+      </div>
 
 
     </>
