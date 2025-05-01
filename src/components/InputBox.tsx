@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import styles from './InputBox.module.css';
 
 type InputBoxProps = {
   placeholder?: string;
@@ -8,7 +7,6 @@ type InputBoxProps = {
 };
 
 export default function InputBox({
-  placeholder = '입력해 주세요',
   initialValue = '',
   onChange,
 }: InputBoxProps) {
@@ -21,13 +19,12 @@ export default function InputBox({
   };
 
   return (
-    <div className={styles.inputBox}>
+    <div className="flex justify-center my-5 w-full">
       <input
         type="text"
-        className={styles.inputField}
         value={value}
-        placeholder={placeholder}
         onChange={handleChange}
+        className="w-[700px] text-[18px] text-[#474D66] bg-white  rounded-[10px] py-[16px] px-[20px] outline-none box-border"
       />
     </div>
   );
