@@ -1,15 +1,17 @@
 import Image from 'next/image';
-import styles from './CloseButton.module.css';
-import { FC } from 'react';
 
 type CloseButtonProps = {
-  onClose: () => void;
+  onClose: VoidFunction;
 };
 
-const CloseButton: FC<CloseButtonProps> = ({ onClose }) => {
+const CloseButton = ({ onClose }: CloseButtonProps) => {
   return (
-    <button className={styles.closeButton} onClick={onClose} aria-label="Close">
-      <Image src="/type=close.png" alt="Close" width={20} height={20} />
+    <button
+      className="bg-transparent border-none cursor-pointer p-0"
+      onClick={onClose}
+      aria-label="Close"
+    >
+      <Image src="/assets/images/type=close.png" alt="Close" width={20} height={20} />
     </button>
   );
 };
