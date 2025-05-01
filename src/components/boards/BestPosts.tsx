@@ -63,7 +63,7 @@ export default function BestPosts() {
       <div className='relative px-[20px] pb-[20px] mb-[40px] overflow-x-auto overflow-y-hidden'>
         <div className="flex gap-4 w-[1048px] md:w-full md:gap-5 md:flex-wrap lg:gap-4 lg:w-full lg:flex-nowrap ">
             {posts.map((product) => (
-              <a key={product.id} href="#" className="flex-shrink-0 w-[250px] h-[200px] md:w-[calc(50%-10px)] md:h-[220px] lg:w-[calc(25%-12px)] rounded-lg card-shadow">
+              <a key={product.id} href="#" className={`${styles.cardShadow} flex-shrink-0 w-[250px] h-[200px] md:w-[calc(50%-10px)] md:h-[220px] lg:w-[calc(25%-12px)] rounded-lg`}>
                 <img
                   alt="작성 이미지"
                   src={product.image}

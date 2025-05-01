@@ -13,7 +13,7 @@ export default function BoardTable() {
           <li className="w-[15%]">날짜</li>
         </ul>
         <ul className='mb-[30px] md:mb-[60px] text-[#474D66]'>
-          <li className='py-[12px] border-b border-[#E4E5F0]'>
+          <li className='${styles.cardShadow} py-[12px] border-b border-[#E4E5F0]'>
             <a href="#">
               <dl className="flex relative flex-wrap">
                 <dd className="w-[10%] hidden md:block">134</dd>

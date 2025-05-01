@@ -5,7 +5,7 @@ import SearchForm from '@/components/SearchForm';
 export default function BoardSearchBar() {
   return (
     <>
-      <div className="flex justify-between items-center mb-[20px] rounded-md flex-wrap gap-[20px]">
+      <div className="flex justify-between items-center mb-[20px] rounded-md flex-wrap gap-[20px] md:gap-0">
         <div className='relative bg-[#F7F7FA] w-[calc(100%-100px)] md:w-[calc(100%-220px)] lg:w-[calc(100%-260px)] h-[40px] box-border rounded-md '>
           <label htmlFor="search" className="sr-only">
             search
