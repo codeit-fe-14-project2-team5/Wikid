@@ -1,36 +1,34 @@
-import styles from './LinkButton.module.css';
 import Image from 'next/image';
-import { FC } from 'react';
 
 interface LinkButtonProps {
-  label: string;
   link: string;
   textColor?: string;
+  children: React.ReactNode;
 }
 
-const LinkButton: FC<LinkButtonProps> = ({ label, link, textColor = '#4CBFA4' }) => {
+const LinkButton = ({ link, textColor = '#4CBFA4', children }: LinkButtonProps) => {
   const handleClick = async () => {
     try {
       await navigator.clipboard.writeText(link);
       alert('링크가 복사되었습니다!');
     } catch (err) {
-      console.error('복사 실패:', err);
+      alert('링크 복사에 실패했습니다. 다시 시도해 주세요.');
     }
   };
 
   return (
     <button
-      className={styles.linkButton}
+      type="button"
       onClick={handleClick}
-      style={{ color: textColor }}
+      className={`flex items-center bg-[#EEF9F6] border-none rounded-lg py-3 px-4 text-lg cursor-pointer text-[${textColor}]`}
     >
       <Image
-        src="/type=link.png"
+        src="/assets/images/type=link.png"
         alt="링크 아이콘"
         width={20}
         height={20}
       />
-      {label}
+      <span className="ml-2">{children}</span>
     </button>
   );
 };
