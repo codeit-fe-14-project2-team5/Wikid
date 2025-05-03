@@ -1,22 +1,6 @@
-import { ChangeEvent } from 'react';
 import Image from 'next/image';
 
 export default function BoardSearchBar() {
-  //const [order, setOrder] = useState('createdAt');
-  //const sortedItems = items.sort((a,b) => b.likeCount - a.likeCount)
-  //const handleNewestClick = () => setOrder('createdAt')
-  //const handleLikeClick = () => setOrder('likeCount')
-  function handleChange(e: ChangeEvent<HTMLInputElement>){
-    //const { } = e.target;
-
-  }
-  function handleClick(e: MouseEvent){
-    //const { } = e.target;
-    e.preventDefault();
-    //const message = `${values.username}`
-    
-
-  }
   return (
     <>
       <div className="flex justify-between items-center mb-[20px] rounded-md flex-wrap gap-[20px] md:gap-0">
