@@ -1,7 +1,7 @@
 import BestPosts from "components/boards/BestPosts";
 import BoardSearchBar from "components/boards/BoardSearchBar";
 import BoardTable from "components/boards/BoardTable";
-import { getArticleList } from "@/apis/boardsAPI";
+
 
 
 export default function boards () {
