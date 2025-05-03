@@ -1,12 +1,26 @@
+import { ChangeEvent } from 'react';
 import Image from 'next/image';
-import styles from '@/styles/boards/bestposts.module.css';
-import SearchForm from '@/components/SearchForm';
 
 export default function BoardSearchBar() {
+  //const [order, setOrder] = useState('createdAt');
+  //const sortedItems = items.sort((a,b) => b.likeCount - a.likeCount)
+  //const handleNewestClick = () => setOrder('createdAt')
+  //const handleLikeClick = () => setOrder('likeCount')
+  function handleChange(e: ChangeEvent<HTMLInputElement>){
+    //const { } = e.target;
+
+  }
+  function handleClick(e: MouseEvent){
+    //const { } = e.target;
+    e.preventDefault();
+    //const message = `${values.username}`
+    
+
+  }
   return (
     <>
-      <div className="flex justify-between items-center mb-[20px] rounded-md flex-wrap gap-[20px]">
-        <div className='relative bg-[#F7F7FA] w-[calc(100%-100px)] md:w-[calc(100%-220px)] lg:w-[calc(100%-260px)] h-[40px] box-border rounded-md '>
+      <div className="flex justify-between items-center mb-[20px] rounded-md flex-wrap gap-[20px] md:gap-0">
+        <div className="relative bg-[#F7F7FA] w-[calc(100%-100px)] md:w-[calc(100%-220px)] lg:w-[calc(100%-260px)] h-[40px] box-border rounded-md">
           <label htmlFor="search" className="sr-only">
             search
           </label>
@@ -33,17 +47,15 @@ export default function BoardSearchBar() {
 
           <div className="hs-dropdown-menu hs-dropdown-open:scale-100 hs-dropdown-open:opacity-100 scale-95 opacity-0 z-10 ease-in-out transition-[transform,opacity] duration-200 min-w-120 bg-white rounded-lg hidden" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-scale-animation">
             <div className="p-1 space-y-0.5">
-              <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100" href="#">
+              <button type="button" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100">
               최신순
-              </a>
-              <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100" href="#">
+              </button>
+              <button type="button" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100">
                 좋아요순
-              </a>
+              </button>
             </div>
           </div>
         </div>
-
-
 
       </div>
     </>
