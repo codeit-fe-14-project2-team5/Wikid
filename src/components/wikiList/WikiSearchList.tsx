@@ -69,13 +69,13 @@ export default function WikiSearchList() {
                           <div className="">
                             <span className='
                               block text-[#8F95B2]
-                              mb-[6px] leading-[17px] text-[14px]
-                              md:mb-0 md:leading-[24px] md:text-[12px]
+                              mb-[6px] leading-[17px] text-[12px]
+                              md:mb-0 md:leading-[24px] md:text-[14px]
                               '>{profile.city}, {profile.nationality}</span>
                             <span className='
                               block text-[#8F95B2]
-                              mb-[6px] leading-[17px] text-[14px]
-                              md:mb-0 md:leading-[24px] md:text-[12px]
+                              mb-[6px] leading-[17px] text-[12px]
+                              md:mb-0 md:leading-[24px] md:text-[14px]
                               '>{profile.job}</span>
                           </div>
                         </div>

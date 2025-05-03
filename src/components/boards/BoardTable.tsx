@@ -155,34 +155,34 @@ export default function BoardTable() {
         </ul>
 
         <nav aria-label="Pagination" className="isolate flex -space-x-px rounded-md shadow-xs gap-[11px] justify-center">
-            <a href="#" className="relative inline-flex  items-center rounded-l-md px-2 py-2 text-[#8F95B2] hover:bg-gray-50 focus:z-20">
+            <a href="#" className="relative inline-flex  items-center rounded-l-md px-2 py-2 text-[#8F95B2] hover:bg-gray-50 focus:z-20 shadow-[0px_4px_20px_0px_#00000014]">
               <Image src="/assets/icons/ic_arrow_left.svg" alt="이전으로" width={18} height={18} className="inline-block" />
               <span className="sr-only">Previous</span>
             </a>
 
             <a href="#" aria-current="page"
-              className="relative z-10 inline-flex items-center text-[#4CBFA4] px-4 py-2 text-sm focus:z-20"
+              className="relative z-10 inline-flex items-center text-[#4CBFA4] px-4 py-2 text-sm focus:z-20 shadow-[0px_4px_20px_0px_#00000014]"
             >
               1
             </a>
-            <a href="#" className="relative inline-flex items-center px-4 py-2 text-sm text-[#8F95B2] rounded-md hover:bg-gray-50 focus:z-20"
+            <a href="#" className="relative inline-flex items-center px-4 py-2 text-sm text-[#8F95B2] rounded-md hover:bg-gray-50 focus:z-20 shadow-[0px_4px_20px_0px_#00000014]"
             >
               2
             </a>
 
-            <a href="#" className="relative items-center px-4 py-2 text-sm text-[#8F95B2] rounded-md hover:bg-gray-50 focus:z-20"
+            <a href="#" className="relative items-center px-4 py-2 text-sm text-[#8F95B2] rounded-md hover:bg-gray-50 focus:z-20 shadow-[0px_4px_20px_0px_#00000014]"
             >
               3
             </a>
-            <a href="#" className="relative items-center px-4 py-2 text-sm text-[#8F95B2] rounded-md hover:bg-gray-50 focus:z-20"
+            <a href="#" className="relative items-center px-4 py-2 text-sm text-[#8F95B2] rounded-md hover:bg-gray-50 focus:z-20 shadow-[0px_4px_20px_0px_#00000014]"
             >
               4
             </a>
-            <a href="#" className="relative inline-flex items-center px-4 py-2 text-sm text-[#8F95B2] rounded-md hover:bg-gray-50 focus:z-20"
+            <a href="#" className="relative inline-flex items-center px-4 py-2 text-sm text-[#8F95B2] rounded-md hover:bg-gray-50 focus:z-20 shadow-[0px_4px_20px_0px_#00000014]"
             >
               5
             </a>
-            <a href="#" className="relative inline-flex items-center rounded-r-md px-2 py-2 text-[#8F95B2] rounded-md hover:bg-gray-50 focus:z-20">
+            <a href="#" className="relative inline-flex items-center rounded-r-md px-2 py-2 text-[#8F95B2] rounded-md hover:bg-gray-50 focus:z-20 shadow-[0px_4px_20px_0px_#00000014]">
               <Image src="/assets/icons/ic_arrow_right.svg" alt="이전으로" width={18} height={18} className="inline-block" />
               <span className="sr-only">Next</span>
             </a>
