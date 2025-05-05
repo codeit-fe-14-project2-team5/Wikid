@@ -1,7 +1,26 @@
-
+import React,{ useState, useRef } from "react";
 import Image from 'next/image';
+import Dropdown from '@/components/boards/DropDownMenu';
+import { log } from "node:console";
 
-export default function BoardSearchBar() {
+export default function BoardSearchBar({ query, setQuery } ) {
+  const [isOpen, setOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState("최신순");
+  const inputRef = useRef(null);
+
+  const onClickDropDown = (orderBy => {
+    const displayWord = orderBy === 'like' ? '좋아요순' : '최신순';
+    setSelectedItem(displayWord);
+    setOpen(false);
+    setQuery({...query, orderBy :orderBy});
+  });
+
+  const onChangeInput = (() => {
+    setQuery({...query, keyword : inputRef.current.value});
+  });
+
+
+
   return (
     <>
       <div className="flex justify-between items-center mb-[20px] rounded-md flex-wrap gap-[20px] md:gap-0">
@@ -9,7 +28,7 @@ export default function BoardSearchBar() {
           <label htmlFor="search" className="sr-only">
             search
           </label>
-          <Image src="/assets/icons/ic_search.svg" alt="검색" width={22} height={22} className="inline-block absolute left-[20px] top-1/2 -translate-y-1/2 " />
+          <Image src="/assets/icons/ic_search.svg" alt="검색" width={22} height={22} className="inline-block absolute left-[20px] top-1/2 -translate-y-1/2" />
 
           <input
             id="search"
@@ -17,31 +36,18 @@ export default function BoardSearchBar() {
             name="search"
             placeholder="제목을 검색해 주세요"
             className="w-full pl-[47px] md:pl-[58px] pr-[20px] py-[7px] rounded-md text-base placeholder:text-[#8F95B2] leading-[26px] text-[16px] bg-[#F7F7FA]"
+            ref={inputRef}
           />
         </div>
 
-        <button type="button" className="w-[80px] h-[45px] px-4 py-2 bg-[#4CBFA4] text-white rounded-md leading-[24px] text-[14px] font-semibold">
+        <button type="button" onClick={onChangeInput} className="w-[80px] h-[45px] px-4 py-2 bg-[#4CBFA4] text-white rounded-md leading-[24px] text-[14px] font-semibold">
           검색
         </button>
 
-        <div className="w-full hs-dropdown md:inline-flex md:w-[120px] lg:w-[140px] gap-[20px]">
-          <button id="hs-dropdown-scale-animation" type="button" className="w-full hs-dropdown-toggle py-3 px-4 inline-flex justify-between items-center text-sm font-medium rounded-lg bg-[#F7F7FA] text-gray-800 shadow-2xs  focus:outline-hidden disabled:opacity-50 disabled:pointer-events-none" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-            최신순
-            <svg className="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-          </button>
-
-          <div className="hs-dropdown-menu hs-dropdown-open:scale-100 hs-dropdown-open:opacity-100 scale-95 opacity-0 z-10 ease-in-out transition-[transform,opacity] duration-200 min-w-120 bg-white rounded-lg hidden" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-scale-animation">
-            <div className="p-1 space-y-0.5">
-              <button type="button" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100">
-                최신순
-              </button>
-              <button type="button" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100">
-                좋아요순
-              </button>
-            </div>
-          </div>
-        </div>
-
+        <Dropdown isOpen={isOpen} onToggle ={()=> {setOpen(!isOpen)}} selectedLabel={selectedItem}>
+          <button onClick={() => { onClickDropDown('recent')}} className="w-full px-4 py-3 rounded-md text-left text-[14px] leading-[24px] text-[#474D66]">최신순</button>
+          <button onClick={() => {  onClickDropDown('like')}} className="w-full px-4 py-3 rounded-md text-left text-[14px] leading-[24px] text-[#474D66]">좋아요순</button>
+        </Dropdown>
       </div>
     </>
   )
