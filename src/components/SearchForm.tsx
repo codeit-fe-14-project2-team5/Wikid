@@ -39,7 +39,7 @@ export default function SearchForm({
     <form className={styles.searchForm} onSubmit={(e) => e.preventDefault()}>
       <div className={styles.searchBox}>
         <Image
-          src="/type=search.png"
+          src="/assets/icons/ic_search.svg"
           alt="검색"
           width={20}
           height={20}

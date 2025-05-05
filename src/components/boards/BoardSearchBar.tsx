@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 
 export default function BoardSearchBar() {
@@ -32,7 +33,7 @@ export default function BoardSearchBar() {
           <div className="hs-dropdown-menu hs-dropdown-open:scale-100 hs-dropdown-open:opacity-100 scale-95 opacity-0 z-10 ease-in-out transition-[transform,opacity] duration-200 min-w-120 bg-white rounded-lg hidden" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-scale-animation">
             <div className="p-1 space-y-0.5">
               <button type="button" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100">
-              최신순
+                최신순
               </button>
               <button type="button" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100">
                 좋아요순
