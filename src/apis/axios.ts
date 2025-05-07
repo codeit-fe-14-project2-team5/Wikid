@@ -1,6 +1,6 @@
 // libs/axios.ts
 import axios from "axios";
-import { useAuthStore } from "@/stores/authStore";
+import { useAuthStore } from "@/store/authStore";
 
 export const axiosInstance = axios.create({
   //   baseURL: "https://wikied-api.vercel.app", //API 베이스 주소

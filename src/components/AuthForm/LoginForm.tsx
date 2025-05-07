@@ -4,7 +4,7 @@ import FormButton from "@/components/AuthForm/FormButton";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
-import { useAuthStore } from "@/stores/authStore";
+import { useAuthStore } from "@/store/authStore";
 import { loginAPI } from "@/apis/authAPI";
 const EMAIL_REGEX = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
@@ -36,15 +36,8 @@ const LoginForm = () => {
 
       login(response.accessToken);
       const currentAuthState = useAuthStore.getState();
-      console.log("현재 상태:", {
-        isLoggedIn: currentAuthState.isLoggedIn,
-        token: currentAuthState.token,
-      });
-      alert("로그인 성공!");
       router.push("/");
     } catch (error) {
-      //   console.error("로그인 실패:", error);
-      alert("로그인 실패했습니다.");
     } finally {
       setIsLoading(false);
     }
@@ -85,7 +78,7 @@ const LoginForm = () => {
           error={errors.password}
         />
         <FormButton type="submit" loading={isLoading}>
-          {isLoading ? "로그인 중..." : "로그인"}
+          로그인
         </FormButton>
         <div className="flex justify-center">
           <Link

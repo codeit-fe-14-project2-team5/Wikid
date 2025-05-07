@@ -1,6 +1,6 @@
 import SignupForm from "@/components/AuthForm/SignupForm";
 import Navbar from "@/components/common/NavBar/NavBar";
-import { useAuthStore } from "@/stores/authStore";
+import { useAuthStore } from "@/store/authStore";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 

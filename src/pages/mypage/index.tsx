@@ -1,6 +1,6 @@
 import PasswordChangeForm from "@/components/mypage/PasswordChangeForm";
 import QuestionCreateForm from "@/components/mypage/QuestionCreateForm";
-import { useAuthStore } from "@/stores/authStore";
+import { useAuthStore } from "@/store/authStore";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -17,16 +17,16 @@ export default function MyPage() {
     if (!mounted || !isInitialized) return;
 
     if (!isLoggedIn) {
-      router.replace("/login"); // 로그인 안 했으면 로그인 페이지로 보냄
+      router.replace("/login");
     }
   }, [mounted, isInitialized, isLoggedIn, router]);
 
   if (!mounted || !isInitialized) {
-    return null; // 렌더링 막기
+    return null;
   }
 
   if (!isLoggedIn) {
-    return null; // 비로그인 상태면 렌더 막기
+    return null;
   }
 
   return (
