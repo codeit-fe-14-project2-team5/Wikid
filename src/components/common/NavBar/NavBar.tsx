@@ -49,7 +49,7 @@ export default function Navbar({ profileImageUrl }: NavbarProps) {
           </Link>
 
           <div className="hidden md:flex space-x-10">
-            <Link href="/wikilist">
+            <Link href="/wikiList">
               <span className="text-gray400 text-sm  ">위키목록</span>
             </Link>
             <Link href="/boards">
