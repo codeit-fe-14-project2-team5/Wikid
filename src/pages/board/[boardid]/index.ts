@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import ArticleCard from '@/components/BoardDetail/ArticleCard';
+import ArticleCard from '@/components/BoardDetail/ArticleCard'
 import { ArticleComments } from '@/components/BoardDetail';
 import CommonButton from '@/components/common/CommonButton';
 import { useAuthStore } from '@/stores/authStore';
