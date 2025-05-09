@@ -4,10 +4,11 @@
   "description": "> **\"이 프로젝트는 지인들의 위키를 직접 작성하고 공유하는 플랫폼입니다.\"**",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "vercel-deploy": "next build && next export" 
   },
   "repository": {
     "type": "git",
