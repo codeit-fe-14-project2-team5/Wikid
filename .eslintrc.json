@@ -1,13 +1,16 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "next/typescript"
+    "next/typescript",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
         "@typescript-eslint/no-explicit-any": "off", 
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "no-unused-vars": "off",
-      	"@typescript-eslint/no-unused-vars": "warn",
+      	"@typescript-eslint/no-unused-vars": "error",
 		    "simple-import-sort/imports": "error",
 		    "simple-import-sort/exports": "error",
 		    "quotes": "off",
