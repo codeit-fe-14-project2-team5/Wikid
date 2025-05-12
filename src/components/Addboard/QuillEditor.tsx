@@ -3,7 +3,6 @@ import ReactQuill, { UnprivilegedEditor, Quill } from 'react-quill';
 import useBoolean from '@/hooks/useBoolean';
 import ImageAddModal from './ImageAddModal';
 
-Quill.register('modules/imageActions', ImageActions);
 
 const formats = [
   'bold',
