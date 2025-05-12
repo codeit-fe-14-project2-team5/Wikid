@@ -17,7 +17,7 @@
 ---
 
 ## 🔗 배포 주소
-- [(곧 공개 예정입니다)](https://wikid-14-05-h0ei8jgij-tansxxs-projects.vercel.app/)
+- [Wikied](https://wikid-14-05-h0ei8jgij-tansxxs-projects.vercel.app/)
 
 ## 🚀 배포 환경
 - vercel
