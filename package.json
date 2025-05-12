@@ -30,6 +30,7 @@
     "axios": "^1.8.4",
     "date-fns": "^4.1.0",
     "framer-motion": "^12.10.3",
+    "intersection-observer": "^0.12.2",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.503.0",
     "next": "^15.3.1",

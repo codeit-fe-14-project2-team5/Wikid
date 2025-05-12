@@ -1,10 +1,8 @@
 import React, { useMemo, useRef } from 'react';
 import ReactQuill, { UnprivilegedEditor, Quill } from 'react-quill';
-import { ImageActions } from '@xeger/quill-image-actions';
 import useBoolean from '@/hooks/useBoolean';
 import ImageAddModal from './ImageAddModal';
 
-Quill.register('modules/imageActions', ImageActions);
 
 const formats = [
   'bold',

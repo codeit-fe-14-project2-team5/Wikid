@@ -2,7 +2,7 @@ import axios, { AxiosResponse } from 'axios';
 import { ArticleResponse, ArticleListResponse, ArticleFormData } from '@/types/apiType';
 import { OTHER_TYPE_ERROR_TEXT } from '@/constants/otherTypeErrorText';
 import { OrderType } from '@/constants/orderOption';
-import axiosWithIntercepter from '../axiosWithIntercepter';
+import axiosWithIntercepter from '../axiosWithInterceptor';
 import axiosDefault from '../axiosDefault';
 
 // 게시글 목록 GET 요청
