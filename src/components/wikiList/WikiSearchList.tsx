@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import IcLink from "@/assets/icons/ic_link.svg";
-import { ProfileType } from "@/pages/wikiList";
-import { ProfileQueryParam } from "@/apis/profileList";
-import Snackbar from "../myWikiPage/SnackBar/SnackBar";
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import IcLink from '@/assets/icons/ic_link.svg';
+import { ProfileType } from '@/pages/wikiList';
+import { ProfileQueryParam } from '@/apis/profileList';
+import Snackbar from '../mywikipage/SnackBar/SnackBar';
 
 interface WikiSearchListProps {
   profileInfo: ProfileType[];
@@ -47,7 +47,7 @@ export default function WikiSearchList({
       {/* 검색 결과 있음 메시지 */}
       {query.name && profileInfo.length > 0 && (
         <p className="px-[20px] mb-[40px] md:mb-[50px] lg:mb-[57px] text-[#8F95B2]">
-          “{query.name}”님을 총{" "}
+          “{query.name}”님을 총{' '}
           <span className="text-[#4CBFA4]">{totalCount}</span>명 찾았습니다.
         </p>
       )}
@@ -86,7 +86,7 @@ export default function WikiSearchList({
                     <a href="#">
                       <img
                         alt={profile.name}
-                        src={profile.image || "/assets/icons/ic_profile.svg"}
+                        src={profile.image || '/assets/icons/ic_profile.svg'}
                         className="absolute left-[25px] top-1/2 -translate-y-1/2 w-[60px] h-[60px] object-cover object-top rounded-full md:w-[85px] md:h-[85px] rounded-full"
                       />
                       <h3
@@ -177,7 +177,7 @@ export default function WikiSearchList({
                 key={page}
                 onClick={() => handlePageChange(page)}
                 className={`relative inline-flex items-center px-4 py-2 text-sm ${
-                  page === currentPage ? "text-[#4CBFA4]" : "text-[#8F95B2]"
+                  page === currentPage ? 'text-[#4CBFA4]' : 'text-[#8F95B2]'
                 } rounded-md shadow-[0px_4px_20px_0px_#00000014]`}
               >
                 {page}
