@@ -8,10 +8,10 @@
 
 | 이름 | GitHub | 주요 담당 기능 | 프로필 |
 |------|--------|----------------|--------|
-| **강희정** | [@tansxx](https://github.com/tansxx) | 내 위키 페이지, 콘텐츠 위키 작성 | <img src="https://avatars.githubusercontent.com/u/159680008?v=4" width="60" /> |
-| **박하은** | [@prkhaeun](https://github.com/prkhaeun) | 랜딩, 공통 컴포넌트, 모달 UX | <img src="https://avatars.githubusercontent.com/u/193223460?v=4" width="60" /> |
+| **강희정** | [@tansxx](https://github.com/tansxx) | 내 위키 페이지, 프로젝트 기초 세팅, 깃 리드미 작성, 배포 | <img src="https://avatars.githubusercontent.com/u/159680008?v=4" width="60" /> |
+| **박하은** | [@prkhaeun](https://github.com/prkhaeun) | 랜딩, 공통 컴포넌트, 모달 UX, 발표 | <img src="https://avatars.githubusercontent.com/u/193223460?v=4" width="60" /> |
 | **손혁진** | [@sssson0](https://github.com/sssson0) | 회원 인증 (가입/로그인), 계정 설정 | <img src="https://avatars.githubusercontent.com/u/159625710?v=4" width="60" /> |
-| **이윤승** | [@ShiroUsagi25](https://github.com/ShiroUsagi25) | 게시글 상세 UI, 게시글 인터랙션 | <img src="https://avatars.githubusercontent.com/u/192941814?v=4" width="60" /> |
+| **이윤승** | [@ShiroUsagi25](https://github.com/ShiroUsagi25) | 게시글 상세 UI, 게시글 작성 | <img src="https://avatars.githubusercontent.com/u/192941814?v=4" width="60" /> |
 | **전수영** | [@daonJeon](https://github.com/daonJeon) | 위키 목록 페이지, 자유게시판 | <img src="https://avatars.githubusercontent.com/u/16948775?v=4" width="60" /> |
 
 ---
@@ -77,7 +77,6 @@ $ npm run dev
 ### 🔌 API & Auth
 
 ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge)
-![NextAuth.js](https://img.shields.io/badge/NextAuth.js-3B82F6?style=for-the-badge&logo=auth0&logoColor=white)
 
 ### 🔁 Routing & State
 
