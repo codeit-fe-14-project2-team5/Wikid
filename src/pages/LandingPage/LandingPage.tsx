@@ -1,7 +1,7 @@
-import { useProfileCode } from "@/hooks/mywiki/useProfileCode";
-import { useAuthStore } from "@/stores/authStore";
-import { useRouter } from "next/router";
-import React from "react";
+import { useProfileCode } from '@/hooks/mywiki/useProfileCode';
+import { useAuthStore } from '@/stores/authStore';
+import { useRouter } from 'next/router';
+import React from 'react';
 
 const LandingPage = () => {
   const router = useRouter();
@@ -12,7 +12,7 @@ const LandingPage = () => {
     if (isLoggedIn) {
       router.push(`/wiki/${code}`);
     } else {
-      router.push("/login");
+      router.push('/login');
     }
   };
 
@@ -22,18 +22,18 @@ const LandingPage = () => {
         id="write"
         className="text-center pt-14 relative min-h-[700px] pb-[150px]"
         style={{
-          background: "#F1F4FD",
-          borderBottomLeftRadius: "50% 20%",
-          borderBottomRightRadius: "50% 20%",
+          background: '#F1F4FD',
+          borderBottomLeftRadius: '50% 20%',
+          borderBottomRightRadius: '50% 20%',
         }}
       >
         <div
           className="absolute bottom-0 left-0 w-full"
           style={{
-            background: "#454D66",
-            height: "1050px",
-            borderTopLeftRadius: "50% 20%",
-            borderTopRightRadius: "50% 20%",
+            background: '#454D66',
+            height: '1050px',
+            borderTopLeftRadius: '50% 20%',
+            borderTopRightRadius: '50% 20%',
             zIndex: 1,
           }}
         ></div>
@@ -50,20 +50,20 @@ const LandingPage = () => {
         <img
           src="/assets/images/type=image1.png"
           alt="Image description"
-          className="mt-12 mx-auto max-w-[450px] h-auto"
-          style={{ position: "relative", zIndex: 2 }}
+          className="mt-12 mx-auto max-w-[450px] h-auto w-[98%] md:w-auto"
+          style={{ position: 'relative', zIndex: 2 }}
         />
 
         <div
           className="hidden md:block absolute top-[1030px] left-[60px] md:left-[460px] text-left"
           style={{ zIndex: 2 }}
         >
-          <div className="text-xl font-bold" style={{ color: "#4CBFA4" }}>
+          <div className="text-xl font-bold" style={{ color: '#4CBFA4' }}>
             WRITE
           </div>
           <div
             className="text-4xl font-light mt-8"
-            style={{ color: "#FFFFFF" }}
+            style={{ color: '#FFFFFF' }}
           >
             친구의 위키,
             <br />
@@ -72,15 +72,15 @@ const LandingPage = () => {
         </div>
 
         <div
-          className="md:hidden px-4 sm:px-6 text-left mt-28"
-          style={{ zIndex: 2, position: "relative", left: "18%" }}
+          className="md:hidden px-4 sm:px-6 text-left mt-28 w-[200px] md:w-auto"
+          style={{ zIndex: 2, position: 'relative', left: '18%' }}
         >
-          <div className="text-lg font-bold" style={{ color: "#4CBFA4" }}>
+          <div className="text-lg font-bold" style={{ color: '#4CBFA4' }}>
             WRITE
           </div>
           <div
             className="text-2xl font-light mt-2"
-            style={{ color: "#FFFFFF" }}
+            style={{ color: '#FFFFFF' }}
           >
             친구의 위키,
             <br />
@@ -101,7 +101,7 @@ const LandingPage = () => {
             src="/assets/images/type=image3.png"
             alt="Image description 3"
             className="w-[38vw] sm:w-[35vw] md:w-[360px] h-auto mt-[20vw] sm:mt-[-15vw] md:mt-[160px]"
-            style={{ transform: "translateX(1vw)" }}
+            style={{ transform: 'translateX(1vw)' }}
           />
         </div>
       </section>
@@ -130,13 +130,13 @@ const LandingPage = () => {
 
         <div
           className="flex justify-center items-end mt-32 md:mt-64 gap-6 md:gap-24"
-          style={{ flexWrap: "nowrap" }}
+          style={{ flexWrap: 'nowrap' }}
         >
           <div
             className="bg-[#DEE5F5] rounded-[25px] p-4"
             style={{
-              width: "clamp(120px, 15vw, 200px)",
-              transform: "translateX(-50%)",
+              width: 'clamp(120px, 15vw, 200px)',
+              transform: 'translateX(-50%)',
             }}
           >
             <img
@@ -147,17 +147,17 @@ const LandingPage = () => {
           </div>
 
           {[
-            { src: "type=image7.png", bg: "#B2A5FD" },
-            { src: "type=image8.png", bg: "#ADEDDE" },
-            { src: "type=image9.png", bg: "#DEE5F5" },
-            { src: "type=image10.png", bg: "#DEE5F5" },
+            { src: 'type=image7.png', bg: '#B2A5FD' },
+            { src: 'type=image8.png', bg: '#ADEDDE' },
+            { src: 'type=image9.png', bg: '#DEE5F5' },
+            { src: 'type=image10.png', bg: '#DEE5F5' },
           ].map((img, i) => (
             <div
               key={i}
               className="rounded-[25px] p-4"
               style={{
                 backgroundColor: img.bg,
-                width: "clamp(120px, 15vw, 200px)",
+                width: 'clamp(120px, 15vw, 200px)',
               }}
             >
               <img
@@ -171,8 +171,8 @@ const LandingPage = () => {
           <div
             className="bg-[#DEE5F5] rounded-[25px] p-4"
             style={{
-              width: "clamp(120px, 15vw, 200px)",
-              transform: "translateX(50%)",
+              width: 'clamp(120px, 15vw, 200px)',
+              transform: 'translateX(50%)',
             }}
           >
             <img
@@ -189,12 +189,12 @@ const LandingPage = () => {
         className="text-center pt-14 relative bg-[#ECF0FA] min-h-[700px] sm:min-h-[800px] md:min-h-[800px] lg:min-h-[800px]"
       >
         <div className="hidden md:block absolute top-32 left-[120px] md:left-[480px] text-left">
-          <div className="text-xl font-bold" style={{ color: "#4CBFA4" }}>
+          <div className="text-xl font-bold" style={{ color: '#4CBFA4' }}>
             VIEW
           </div>
           <div
             className="text-4xl font-light mt-8"
-            style={{ color: "#474D66" }}
+            style={{ color: '#474D66' }}
           >
             친구들이 달아준
             <br />
@@ -203,12 +203,12 @@ const LandingPage = () => {
         </div>
 
         <div className="md:hidden px-4 sm:px-6 text-left mt-10">
-          <div className="text-lg font-bold" style={{ color: "#4CBFA4" }}>
+          <div className="text-lg font-bold" style={{ color: '#4CBFA4' }}>
             VIEW
           </div>
           <div
             className="text-2xl font-light mt-2"
-            style={{ color: "#474D66" }}
+            style={{ color: '#474D66' }}
           >
             친구들이 달아준
             <br />
